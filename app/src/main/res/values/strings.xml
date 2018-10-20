@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">bmi</string>
+    <string name="bmi_information">The body mass index (BMI) or Quetelet index is a value derived from the mass (weight) and height of an individual. The BMI is defined as the body mass divided by the square of the body height, and is universally expressed in units of kg/m2, resulting from mass in kilograms and height in meters.</string>
+    <string name="ok">ok</string>
+    <string name="ok">ok</string>
+    <string name="weight">Weight (kg)</string>
+    <string name="height">Height (m)</string>
+    <string name="help">Help</string>
 </resources>
