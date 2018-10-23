@@ -1,6 +1,7 @@
 package com.wang.bmi;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -48,7 +49,12 @@ new AlertDialog.Builder(MainActivity.this)
         float height = Float.parseFloat(h);
         float bmi = weight / (height * height);
         Log.d("MainActivity" , bmi +"");
-        //小懸浮視窗
+        //切換到另一個視窗呈現
+        Intent intent = new Intent(this,resultActivity.class);
+        intent.putExtra("BMI",bmi);
+        startActivity(intent);
+
+        /*//小懸浮視窗
         Toast.makeText(this,"Your BMI is "+bmi,Toast.LENGTH_LONG).show();
         //對話框
         new AlertDialog.Builder(this)
@@ -61,6 +67,6 @@ new AlertDialog.Builder(MainActivity.this)
                         edHeight.setText("");
                     }
                 })
-                .show();
+                .show();*/
     }
 }
